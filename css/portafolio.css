@@ -13,10 +13,7 @@ nav{
 }
 nav button{
     background-color: black;
-    padding: 0;
-    margin: 0;
     border: 0;
-    position: absolute;
 }
 nav button:hover {
     cursor: pointer;
@@ -26,11 +23,11 @@ nav ul{
     text-align: center;
     font-size: 0.8rem;
     position: absolute;
-    width: 50%;
+    width: 60%;
 }
 nav a{
     text-decoration: none;
-    color: white
+    color: white;
 }
 .hidden {
     display: none;
@@ -42,32 +39,35 @@ nav a{
     align-items: center;
     padding-top: 10%;
 }
+
 .flotar{
     justify-content: center;
     position: absolute;
-    top: 4%;
+    top: 5%;
     z-index: -1;
     width: 100%;
 }
 .flotar1{
     justify-content: center;
     position: absolute;
-    top: 13%;
+    top: 18%;
     z-index: -1;
     width: 100%;
+    height: auto;
 }
 .flotar2{
     justify-content: center;
     position: absolute;
     z-index: -1;
-    top: 26%;
+    top: 33%;
+    right: 0;
 }
 .flotar3{
     justify-content: center;
     position: absolute;
     z-index: -1;
-    top: 46%;
-    left: -10%;
+    top: 56%;
+    left: -15%;
 }
 .flotar img {
     width: 100%;
@@ -147,7 +147,7 @@ nav a{
     width: 100%;
     margin-top: 2rem;
 }
-.div1 {
+.img-hability {
     background-color: #1A1615;
     border-radius: 50%;
     padding: 1rem;
@@ -155,14 +155,14 @@ nav a{
     text-align: center;
 }
 
-.caja1 {
+.caja1-hability {
     display: inline-block;
     text-align: center;
     max-width: 150px;
     margin-right: 5rem;
     margin-bottom: 2rem;
 }
-.caja2 {
+.caja2-hability {
     display: flex;
     display: inline-block;
     text-align: center;
@@ -171,52 +171,78 @@ nav a{
 .table {
     text-align: left;
     display: flex;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding-top: 2rem;
     border-collapse: collapse;
     justify-content: center;
     color:#ADADAD;
 }
-tr th {
-    border-bottom: 1px solid #ADADAD;
-    text-align: left;
+.table td:nth-child(n) {
+    border-bottom: 2px solid white;
 }
 
-.line-row {
+.portafolio-container {
+    padding: 0 10%;
+}
+.img-portafolio {
+    margin-top: 2rem;
+    max-width: 100%;
+}
+.portafolio-img-content {
+    display: flex;
+    justify-content: center;
+}
+
+.img-contact {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 1rem;
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenido-contacto {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    margin: 0;
-    border-bottom: 2px solid white;
-    padding: 0;
+}
+.info-contacto {
+    text-align: center;
+}
+.contenedor-contacto {
+display: flex;
+justify-content: center;
+}
+.header-contacto {
+    padding: 2rem 0;
 }
 
 .p-final {
     color: #ADADAD;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
-
-.img-portafolio {
-    margin-top: 2rem;
-    width: 100%;
+/* Small devices (portrait tablets and large phones, 540px and up) */
+@media only screen and (min-width: 540px) {
+    nav ul{
+        width: 65%;
+    }
+    .flotar{
+        top: 6%;
+    }
+    .flotar1{
+        top:16%;
+    }
+    .flotar2{
+        top: 30%;
+    }
+    .flotar3{
+        top: 53%;
+    }
 }
-.img-contact {
-    margin-top: 2rem;
-    padding: 1rem;
-    border-radius: 50%;
-    border: 1px solid white;
-}
-.content1 {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-.card {
-    text-align: center;
-    margin:1.5rem;
-    min-width: 6.5rem;
-    justify-content: center;
-}
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     nav button {
@@ -237,30 +263,17 @@ tr th {
         font-size: 0.7rem;
     }
     .flotar{
-        justify-content: center;
-        position: absolute;
-        top: 5%;
-        z-index: -1;
-        width: 100%;
+        top: 6%;
     }
     .flotar1{
-        justify-content: center;
-        position: absolute;
-        top: 20%;
-        z-index: -1;
-        width: 100%;
+        top: 21%;
     }
     .flotar2{
-        justify-content: center;
-        position: absolute;
-        z-index: -1;
-        top: 39%;
+        top: 41%;
     }
     .flotar3{
-        justify-content: center;
-        position: absolute;
-        z-index: -1;
         top: 70%;
+        left: -12%;
     }
     .col-4 {
         display: flex;
@@ -272,6 +285,10 @@ tr th {
         padding: 0.5rem;
         box-sizing: border-box;
     }
+    .table {
+        font-size: 1.5rem;
+    }
+
 }
 /* Medium devices (landscape tablets, 768px and up) */
  @media only screen and (min-width: 768px) {
@@ -281,24 +298,17 @@ tr th {
         font-size: 1rem;
     }
     .flotar1{
-        justify-content: center;
-        position: absolute;
-        top: 20%;
-        z-index: -1;
-        width: 100%;
+        top: 21%;
     }
     .flotar2{
-        justify-content: center;
-        position: absolute;
-        z-index: -1;
-        top: 40%;
+        top: 44%;
     }
     .flotar3{
-        justify-content: center;
-        position: absolute;
-        z-index: -1;
-        top: 68%;
-        left: -9%;
+        top: 70%;
+        left: -7%;
+    }
+    h4 {
+        padding-top: 8rem;
     }
 }
 /* Large devices (laptops/desktops, 992px and up) */
@@ -315,30 +325,16 @@ tr th {
         width: auto;
     }
     .flotar{
-        justify-content: center;
-        position: absolute;
         top: 6%;
-        z-index: -1;
-        width: 100%;
     }
     .flotar1{
-        justify-content: center;
-        position: absolute;
         top: 17%;
-        z-index: -1;
-        width: 100%;
     }
     .flotar2{
-        justify-content: center;
-        position: absolute;
-        z-index: -1;
-        top: 39%;
+        top: 44%;
     }
     .flotar3{
-        justify-content: center;
-        position: absolute;
-        z-index: -1;
-        top: 66%;
+        top: 68%;
     }
  }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -361,20 +357,13 @@ tr th {
         text-align: center;
     }
     .flotar1{
-        justify-content: center;
-        position: absolute;
         top: 15%;
-        z-index: -1;
-        width: 100%;
     }
     .flotar3{
-        justify-content: center;
-        position: absolute;
-        z-index: -1;
         top: 64%;
         left: -6%;
     }
-    .caja1 {
+    .caja1-hability {
         display: inline-block;
         text-align: center;
         max-width: 150px;
