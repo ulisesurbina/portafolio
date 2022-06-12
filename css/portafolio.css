@@ -47,39 +47,30 @@ nav a{
     z-index: -1;
     width: 100%;
 }
-.flotar1{
-    justify-content: center;
-    position: absolute;
-    top: 18%;
-    z-index: -1;
-    width: 100%;
-    height: auto;
+.flotar1 {
+    background-image: url("../images/Group\ 98.svg");
+    height: 8rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 58%;
 }
 .flotar2{
-    justify-content: center;
-    position: absolute;
-    z-index: -1;
-    top: 33%;
-    right: 0;
+    background-image: url("../images/Group\ 97.svg");
+    height: 8rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 120%;
 }
 .flotar3{
-    justify-content: center;
-    position: absolute;
-    z-index: -1;
-    top: 56%;
-    left: -15%;
+    background-image: url("../images/Group\ 97.svg");
+    height: 8rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: -15%;
 }
 .flotar img {
     width: 100%;
-}
-.flotar1 img {
-    width: 100%;
-}
-.flotar2 img {
-    width: 70%;
-}
-.flotar3 img {
-    width: 70%;
 }
 .img1{
     max-width: 50%;
@@ -104,10 +95,10 @@ nav a{
     width: 100%;
 }
 .tit3{
+    padding-top: 0;
     font-size: 2.5rem;
     padding-left: 1.5rem;
-    padding-top: 2.6rem;
-    margin-bottom: 0;
+    margin-top: 0;
     text-align: center;
 }
 .tit3-1{
@@ -173,14 +164,18 @@ nav a{
     display: flex;
     font-size: 1.2rem;
     padding-top: 2rem;
+    width: 100%;
     border-collapse: collapse;
     justify-content: center;
     color:#ADADAD;
 }
-.table td:nth-child(n) {
-    border-bottom: 2px solid white;
+.table th:nth-child(n) {
+    padding-left: 2rem;
 }
-
+.table tr:nth-child(even) {
+    font-size: 1rem;
+    
+}
 .portafolio-container {
     padding: 0 10%;
 }
@@ -233,15 +228,17 @@ justify-content: center;
     .flotar{
         top: 6%;
     }
-    .flotar1{
-        top:16%;
-    }
     .flotar2{
-        top: 30%;
+        height: 8rem;
+        background-position-x: 112%;
     }
     .flotar3{
-        top: 53%;
+        background-position-x: -12%;
     }
+    .table th:nth-child(n) {
+        padding-left: 10rem;
+    }
+    
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -265,16 +262,10 @@ justify-content: center;
     .flotar{
         top: 6%;
     }
-    .flotar1{
-        top: 21%;
+    .flotar1 {
+        height: 12rem;
     }
-    .flotar2{
-        top: 41%;
-    }
-    .flotar3{
-        top: 70%;
-        left: -12%;
-    }
+    
     .col-4 {
         display: flex;
         width: calc(100% / 12 * 4);
@@ -297,15 +288,12 @@ justify-content: center;
         padding-left: 1rem;
         font-size: 1rem;
     }
-    .flotar1{
-        top: 21%;
-    }
     .flotar2{
-        top: 44%;
+        height: 8rem;
+        background-position-x: 107%;
     }
     .flotar3{
-        top: 70%;
-        left: -7%;
+        background-position-x: -8%;
     }
     h4 {
         padding-top: 8rem;
@@ -327,14 +315,11 @@ justify-content: center;
     .flotar{
         top: 6%;
     }
-    .flotar1{
-        top: 17%;
-    }
-    .flotar2{
-        top: 44%;
+    .flotar1 {
+        height: 14rem;
     }
     .flotar3{
-        top: 68%;
+        background-position-x: -6%;
     }
  }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -356,12 +341,15 @@ justify-content: center;
         margin-bottom: 0;
         text-align: center;
     }
-    .flotar1{
-        top: 15%;
+    .flotar1 {
+        height: 26rem;
+    }
+    .flotar2{
+        height: 8rem;
+        background-position-x: 105%;
     }
     .flotar3{
-        top: 64%;
-        left: -6%;
+        background-position-x: -3%;
     }
     .caja1-hability {
         display: inline-block;
