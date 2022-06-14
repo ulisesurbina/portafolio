@@ -172,10 +172,7 @@ nav a{
 .table th:nth-child(n) {
     padding-left: 2rem;
 }
-.table tr:nth-child(even) {
-    font-size: 1rem;
-    
-}
+
 .portafolio-container {
     padding: 0 10%;
 }
@@ -277,7 +274,7 @@ justify-content: center;
         box-sizing: border-box;
     }
     .table {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
 }
@@ -321,6 +318,12 @@ justify-content: center;
     .flotar3{
         background-position-x: -6%;
     }
+    .table th:nth-child(even) {
+        padding: 1rem 5rem 1rem 8rem;  
+    }
+    .table {
+        font-size: 1.8rem;
+    }
  }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
@@ -360,5 +363,11 @@ justify-content: center;
     }
     .tit4 {
         font-size: 1.5rem;
+    }
+    .table th:nth-child(even) {
+        padding: 2rem 10rem 2rem 10rem;  
+    }
+    .table {
+        font-size: 2rem;
     }
 }
